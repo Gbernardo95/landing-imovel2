@@ -1,81 +1,87 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sky Mario Guimarães - Nova Iguaçu</title>
-    <style>
-      body {
-        font-family: Arial, sans-serif;
-        background: #f2f2f2;
-        margin: 0;
-        padding: 0;
-        color: #333;
-      }
-      header {
-        background: #0077cc;
-        color: white;
-        padding: 20px;
-        text-align: center;
-      }
-      section {
-        padding: 30px;
-        text-align: center;
-      }
-      img {
-        max-width: 100%;
-        height: auto;
-        border-radius: 12px;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-      }
-      button {
-        background: #25d366;
-        color: white;
-        border: none;
-        padding: 15px 25px;
-        font-size: 16px;
-        border-radius: 8px;
-        cursor: pointer;
-        margin-top: 20px;
-      }
-      button:hover {
-        background: #128c7e;
-      }
-      footer {
-        background: #eee;
-        text-align: center;
-        padding: 15px;
-        font-size: 14px;
-      }
-    </style>
-  </head>
-  <body>
-    <header>
-      <h1>Sky Mario Guimarães</h1>
-      <p>Seu novo apê no coração de Nova Iguaçu</p>
-    </header>
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sky Mario Guimarães - Nova Iguaçu</title>
+  <!-- Pixel Meta Ads -->
+  <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', 'SEU_PIXEL_ID_AQUI'); 
+    fbq('track', 'PageView');
+  </script>
+  <noscript>
+    <img height="1" width="1" style="display:none"
+         src="https://www.facebook.com/tr?id=SEU_PIXEL_ID_AQUI&ev=PageView&noscript=1"/>
+  </noscript>
+  <style>
+    body { margin:0;padding:0;font-family:Arial,sans-serif;color:#333; }
+    .hero { position:relative; overflow:hidden; }
+    .hero img { width:100%; height:auto; }
+    .galeria { display:flex; flex-wrap:wrap; gap:5px; padding:10px; }
+    .galeria img { width:calc(33.33% - 10px); border-radius:8px; }
+    .container { padding:20px; max-width:800px;margin:auto; }
+    h1, h2 { text-align:center; }
+    form { display:flex; flex-direction:column; gap:10px; margin-top:20px; }
+    input, textarea { padding:10px;border:1px solid #ccc;border-radius:4px; font-size:14px; }
+    button, .btn-wpp { background:#25d366;color:#fff;padding:15px;border:none;border-radius:6px;font-size:16px;cursor:pointer;transition:opacity .3s; text-decoration:none;text-align:center; }
+    button:hover, .btn-wpp:hover { opacity:0.8; }
+    .btn-wpp { display:block; margin:20px auto; }
+    footer { text-align:center; padding:15px; background:#f0f0f0; }
+    .chat-flutuante { position:fixed; bottom:20px; right:20px; z-index:999; }
+  </style>
+</head>
+<body>
 
-    <section>
-      <img
-        src="https://via.placeholder.com/800x450?text=Sky+Mario+Guimarães"
-        alt="Fachada do Sky Mario Guimarães"
-      />
-      <h2>Lançamento incrível na rua Doutor Mário Guimarães</h2>
-      <p>
-        Condomínio moderno, localização privilegiada, entrada facilitada e condições especiais para você conquistar o que é seu!
-      </p>
+  <div class="hero">
+    <img src="https://i.ibb.co/VRR1T6q/Whats-App-Image-2025-06-09-at-16-30-39.webp" alt="Sky Mario Guimarães">
+  </div>
 
-      <a
-        href="https://wa.me/message/BOD7PZGF3RWLF1"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        <button>Falar com o corretor no WhatsApp</button>
-      </a>
-    </section>
+  <div class="container">
+    <h1>Sky Mario Guimarães</h1>
+    <h2>Rua Dr. Mário Guimarães, Nova Iguaçu</h2>
+    <p>Condomínio moderno, entrada facilitada e condições exclusivas pra realização do sonho da casa própria!</p>
 
-    <footer>
-      © 2025 - Gabriel Bernardo | Corretor de Imóveis
-    </footer>
-  </body>
+    <div class="galeria">
+      <img src="https://i.ibb.co/VRR1T6q/Whats-App-Image-2025-06-09-at-16-30-39.webp" alt="">
+      <img src="https://i.ibb.co/9kfdfgpp/Whats-App-Image-2025-06-09-at-16-30-39-1.webp" alt="">
+      <img src="https://i.ibb.co/bjwCGWcL/Whats-App-Image-2025-06-09-at-17-45-20-1.jpg" alt="">
+      <img src="https://i.ibb.co/Zz625wsx/Whats-App-Image-2025-06-09-at-17-45-19.jpg" alt="">
+      <img src="https://i.ibb.co/DPWBhv5j/Whats-App-Image-2025-06-09-at-17-45-20.jpg" alt="">
+    </div>
+
+    <form action="https://formsubmit.co/gabriel.bernardo.rivavendas@gmail.com" method="POST">
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_next" value="https://gbernardo95.github.io/landing-imovel/obrigado.html">
+      <input type="text" name="Nome" placeholder="Seu nome" required>
+      <input type="email" name="Email" placeholder="Seu e-mail" required>
+      <input type="tel" name="Telefone" placeholder="Seu telefone" required>
+      <textarea name="Mensagem" rows="4" placeholder="Mensagem (ex: estou interessado...)" required></textarea>
+      <button type="submit">Quero mais info</button>
+    </form>
+
+    <a href="https://wa.me/message/BOD7PZGF3RWLF1" class="btn-wpp" target="_blank" rel="noopener">
+      Falar agora no WhatsApp
+    </a>
+  </div>
+
+  <div class="chat-flutuante">
+    <a href="https://wa.me/message/BOD7PZGF3RWLF1" target="_blank">
+      <img src="https://img.icons8.com/color/48/000000/whatsapp--v1.png" alt="Fale conosco">
+    </a>
+  </div>
+
+  <footer>
+    © 2025 Gabriel Bernardo | Corretor de Imóveis
+  </footer>
+
+</body>
 </html>
+
