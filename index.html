@@ -4,89 +4,89 @@
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <title>Sky Mario Guimarães – Nova Iguaçu</title>
-  <!-- Fonte vintage elegante -->
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+  <!-- PIXEL META ADS (substitua YOUR_PIXEL_ID) -->
+  <!-- <script>!function(f,b,e,v,n,t,s){...fbq('init','YOUR_PIXEL_ID');fbq('track','PageView');}</script> -->
   <style>
-    body { margin:0; font-family:sans-serif; color:#333; background:#fafafa; }
-    header { font-family:'Playfair Display', serif; text-align:center; background:#fff; padding:20px; font-size:2rem; }
-    .whatsapp-top { position:fixed; top:20px; right:20px; z-index:1000;
-      background:#25d366; padding:12px 18px; border-radius:50px; color:#fff; text-decoration:none; font-weight:bold; }
-    .banner {
-      background: url('https://i.ibb.co/Zz625wsx/Whats-App-Image-2025-06-09-at-17-45-19.jpg') center/cover no-repeat;
-      height:400px; display:flex; align-items:center; justify-content:left; padding:0 20px;
-      position:relative;
-    }
-    .banner h2 { background:rgba(0,0,0,0.6); color:#fff; font-size:1.5rem; padding:15px; border-radius:8px; }
-    form.general { max-width:450px; margin:40px auto; padding:20px; background:#fff; border-radius:8px;
-      box-shadow:0 4px 12px rgba(0,0,0,0.1); display:flex; flex-direction:column; gap:15px; }
-    form.general input, form.general button { padding:12px; font-size:1rem; border-radius:4px; border:1px solid #ccc; }
-    form.general button { background:#2C3E50; color:#fff; border:none; cursor:pointer; }
+    /* Estilos gerais */
+    body { margin:0; font-family:'Segoe UI',sans-serif; background:#fafafa; color:#333; }
+    header { font-family:'Playfair Display',serif; text-align:center; padding:20px; font-size:2.2rem; }
+    .whatsapp-float { position:fixed; top:20px; right:20px; background:#25d366; padding:12px; border-radius:50%; z-index:1000; }
+    .banner { background:url('https://i.ibb.co/Zz625wsx/Whats-App-Image-2025-06-09-at-17-45-19.jpg') center/cover no-repeat; height:450px; position:relative; display:flex; align-items:center; }
+    .banner h2 { margin-left:20px; background:rgba(0,0,0,0.6); color:#fff; padding:15px 25px; border-radius:8px; font-size:1.5rem; }
+    form.simple { max-width:450px; margin:30px auto; padding:20px; background:#fff; border-radius:8px; box-shadow:0 2px 10px rgba(0,0,0,0.1); display:flex; flex-direction:column; gap:15px; }
+    form.simple input, form.simple button { padding:12px; font-size:1rem; border-radius:4px; }
+    form.simple button { background:#2c3e50; color:#fff; border:none; cursor:pointer; }
     .section { padding:50px 20px; max-width:900px; margin:auto; text-align:center; }
-    .map-section { display:flex; flex-wrap:wrap; gap:30px; align-items:center; justify-content:center; }
-    .map-section iframe { border:0; width:100%; max-width:400px; height:300px; border-radius:8px; }
+    .section img, .section iframe { width:100%; border-radius:8px; }
+    .map-grid { display:flex; flex-wrap:wrap; gap:30px; justify-content:center; align-items:center; }
+    .map-grid div { max-width:400px; text-align:left; }
     .carousel { display:flex; overflow-x:auto; gap:10px; padding:20px; }
     .carousel img { height:200px; border-radius:8px; flex-shrink:0; }
-    footer { background:#2C3E50; color:#fff; padding:30px 20px; text-align:center; }
-    .whatsapp-bottom { display:inline-block; margin-top:20px; background:#25d366; color:#fff; padding:15px 25px;
-      border-radius:50px; text-decoration:none; font-weight:bold; }
+    footer { background:#2c3e50; color:#fff; padding:30px 20px; text-align:center; }
+    .whatsapp-btn { background:#25d366; color:#fff; padding:15px 25px; border-radius:50px; text-decoration:none; font-weight:bold; }
     @media(max-width:600px){
-      .banner h2 { font-size:1.2rem; }
-      .map-section { flex-direction:column; }
+      .banner h2 { font-size:1.2rem; margin-left:10px; }
+      .map-grid { flex-direction:column; }
     }
   </style>
 </head>
 <body>
 
   <header>Sky Mario Guimarães – Nova Iguaçu</header>
-  <a href="https://wa.me/message/BOD7PZGF3RWLF1" class="whatsapp-top" target="_blank">WhatsApp</a>
+  <a href="https://wa.me/message/BOD7PZGF3RWLF1" class="whatsapp-float" target="_blank">
+    <img src="https://img.icons8.com/ios-filled/24/ffffff/whatsapp.png"/>
+  </a>
 
   <div class="banner">
-    <h2>2 e 3 quartos com suíte, varanda gourmet e lazer premium</h2>
+    <h2>2 e 3 quartos • suíte • varanda gourmet • lazer premium</h2>
   </div>
 
-  <form action="https://formsubmit.co/gabriel.bernardo.rivavendas@gmail.com" method="POST" class="general">
-    <input type="hidden" name="_next" value="https://gbernardo95.github.io/landing-imovel/obrigado.html"/>
-    <input type="text" name="nome" placeholder="Nome completo" required/>
-    <input type="email" name="email" placeholder="Seu melhor e-mail" required/>
-    <input type="tel" name="telefone" placeholder="Telefone com DDD" required/>
+  <form action="https://formsubmit.co/gabriel.bernardo.rivavendas@gmail.com" method="POST" class="simple">
+    <input type="hidden" name="_next" value="https://gbernardo95.github.io/landing-imovel/obrigado.html">
+    <input type="text" name="nome" placeholder="Seu nome" required>
+    <input type="email" name="email" placeholder="Seu melhor e-mail" required>
+    <input type="tel" name="telefone" placeholder="Telefone com DDD" required>
     <button type="submit">Quero saber mais</button>
   </form>
 
   <div class="section">
-    <img src="https://i.ibb.co/bjwCGWcL/Whats-App-Image-2025-06-09-at-17-45-20-1.jpg"
-         alt="Vista aérea da região" style="width:100%; border-radius:8px;"/>
+    <img src="https://i.ibb.co/bjwCGWcL/Whats-App-Image-2025-06-09-at-17-45-20-1.jpg" alt="Área do entorno"/>
   </div>
 
-  <div class="section map-section">
+  <div class="section map-grid">
     <iframe src="https://www.google.com/maps?q=Rua+Dr.+Mário+Guimarães,+Nova+Iguaçu&output=embed"></iframe>
-    <div><h3>Localização</h3><p>Rua Dr. Mário Guimarães, Nova Iguaçu – RJ</p></div>
+    <div>
+      <h3>Localização</h3>
+      <p><strong>Empreendimento:</strong> Sky Mario Guimarães<br>
+      <strong>Endereço:</strong> Rua Dr. Mário Guimarães, Nova Iguaçu – RJ</p>
+    </div>
   </div>
 
   <div class="section">
     <h2>Sobre o Empreendimento</h2>
-    <p>Sky Mario Guimarães é o pré-lançamento de alto padrão em Nova Iguaçu com apartamentos de 2 e 3 quartos, suíte, varanda gourmet, lazer Premium, entrada facilitada e opções de pagamento flexíveis.
-    Antecipe-se e garanta condições e unidades privilegiadas!</p>
+    <p>Sky Mario Guimarães é o pré-lançamento de alto padrão em Nova Iguaçu com apartamentos de 2 e 3 quartos, suíte, varanda gourmet, lazer completo, entrada facilitada e opções de pagamento flexíveis. Antecipe-se e garanta condições exclusivas!</p>
   </div>
 
   <div class="carousel">
-    <img src="https://i.ibb.co/VRR1T6q/Whats-App-Image-2025-06-09-at-16-30-39.webp" alt="">
-    <img src="https://i.ibb.co/9kfdfgpp/Whats-App-Image-2025-06-09-at-16-30-39-1.webp" alt="">
-    <img src="https://i.ibb.co/Zz625wsx/Whats-App-Image-2025-06-09-at-17-45-19.jpg" alt="">
-    <img src="https://i.ibb.co/bjwCGWcL/Whats-App-Image-2025-06-09-at-17-45-20-1.jpg" alt="">
+    <img src="https://i.ibb.co/VRR1T6q/Whats-App-Image-2025-06-09-at-16-30-39.webp"/>
+    <img src="https://i.ibb.co/9kfdfgpp/Whats-App-Image-2025-06-09-at-16-30-39-1.webp"/>
+    <img src="https://i.ibb.co/Zz625wsx/Whats-App-Image-2025-06-09-at-17-45-19.jpg"/>
+    <img src="https://i.ibb.co/bjwCGWcL/Whats-App-Image-2025-06-09-at-17-45-20-1.jpg"/>
   </div>
 
-  <form action="https://formsubmit.co/gabriel.bernardo.rivavendas@gmail.com" method="POST" class="general">
-    <input type="hidden" name="_next" value="https://gbernardo95.github.io/landing-imovel/obrigado.html"/>
+  <form action="https://formsubmit.co/gabriel.bernardo.rivavendas@gmail.com" method="POST" class="simple">
+    <input type="hidden" name="_next" value="https://gbernardo95.github.io/landing-imovel/obrigado.html">
     <h3>Não perca essa oportunidade!</h3>
-    <input type="text" name="nome" placeholder="Nome completo" required/>
-    <input type="email" name="email" placeholder="Seu e-mail" required/>
-    <input type="tel" name="telefone" placeholder="Telefone com DDD" required/>
-    <button type="submit">Garanta agora mesmo</button>
+    <input type="text" name="nome" placeholder="Seu nome" required>
+    <input type="email" name="email" placeholder="Seu melhor e-mail" required>
+    <input type="tel" name="telefone" placeholder="Telefone com DDD" required>
+    <button type="submit">Quero garantir agora</button>
   </form>
 
   <footer>
-    <p>Fale conosco diretamente no WhatsApp</p>
-    <a href="https://wa.me/message/BOD7PZGF3RWLF1" class="whatsapp-bottom" target="_blank">WhatsApp</a>
+    <p>Fale conosco via WhatsApp</p>
+    <a href="https://wa.me/message/BOD7PZGF3RWLF1" class="whatsapp-btn" target="_blank">WhatsApp</a>
     <p>© 2025 Gabriel Bernardo | Corretor de Imóveis</p>
   </footer>
 
